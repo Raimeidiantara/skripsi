@@ -387,20 +387,20 @@ function checkQuestions( bFeedback, bForce, bNotLeavingPage ) {
   if( bFeedback && currFeedbackIdx == 0 && !qu20620.hasBeenProcessed) {
     if( ans_VarQuestion_SOAL6 == '\u0035\u0030\u0030\u0020\u006B\u0067' ) 
     { //1 
-        trivActFBCnt++; action20620_1(onAfterFBAction);  return 0;
+        trivActFBCnt++; action20620_5(onAfterFBAction);  return 0;
   } //1
 
     else if( ans_VarQuestion_SOAL6 != '\u0035\u0030\u0030\u0020\u006B\u0067' && ans_VarQuestion_SOAL6 != '~~~null~~~' ) 
     { //2 
-trivActFBCnt++; action20620_2(onAfterFBAction);return 0;  } //2 
+trivActFBCnt++; action20620_6(onAfterFBAction);return 0;  } //2 
 
     else if( ans_VarQuestion_SOAL6 != '\u0035\u0030\u0030\u0020\u006B\u0067' && ans_VarQuestion_SOAL6 != '~~~null~~~' ) 
     { //2 
-trivActFBCnt++; action20620_3(onAfterFBAction);return 0;  } //2 
+trivActFBCnt++; action20620_7(onAfterFBAction);return 0;  } //2 
 
     else if( ans_VarQuestion_SOAL6 != '\u0035\u0030\u0030\u0020\u006B\u0067' && ans_VarQuestion_SOAL6 != '~~~null~~~' ) 
     { //2 
-trivActFBCnt++; action20620_4(onAfterFBAction);return 0;  } //2 
+trivActFBCnt++; action20620_8(onAfterFBAction);return 0;  } //2 
 
   }
   if( !bFeedback ) currFeedbackIdx = 1;
@@ -521,20 +521,20 @@ function Update_qu20620(value) {
    qu20620Object.hasBeenProcessed=false;
 }
 
-function action20620_1(fn){
-    if(!document.getElementById("DLG_Div_20620"))trivAlert( 'action20620_1', 'MEDIA PEMBELAJARAN IPA', 'Benar!!!', fn );
+function action20620_5(fn){
+    if(!document.getElementById("DLG_Div_20620"))trivAlert( 'action20620_5', 'MEDIA PEMBELAJARAN IPA', 'Benar!!!', fn );
 }
 
-function action20620_2(fn){
-    if(!document.getElementById("DLG_Div_20620"))trivAlert( 'action20620_2', 'MEDIA PEMBELAJARAN IPA', 'Salah!!!', fn );
+function action20620_6(fn){
+    if(!document.getElementById("DLG_Div_20620"))trivAlert( 'action20620_6', 'MEDIA PEMBELAJARAN IPA', 'Salah!!!', fn );
 }
 
-function action20620_3(fn){
-    if(!document.getElementById("DLG_Div_20620"))trivAlert( 'action20620_3', 'MEDIA PEMBELAJARAN IPA', 'Salah!!!', fn );
+function action20620_7(fn){
+    if(!document.getElementById("DLG_Div_20620"))trivAlert( 'action20620_7', 'MEDIA PEMBELAJARAN IPA', 'Salah!!!', fn );
 }
 
-function action20620_4(fn){
-    if(!document.getElementById("DLG_Div_20620"))trivAlert( 'action20620_4', 'MEDIA PEMBELAJARAN IPA', 'Salah!!!', fn );
+function action20620_8(fn){
+    if(!document.getElementById("DLG_Div_20620"))trivAlert( 'action20620_8', 'MEDIA PEMBELAJARAN IPA', 'Salah!!!', fn );
 }
 
 function updateFLVPlayer(bMute){
